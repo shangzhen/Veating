@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+ <package name="default" extends="struts-default" namespace="/">
+		<!--管理员  -->
+		<action name="admin_*" class="veating.action.ShopAction" method="{1}">
+			<result>${url}</result>
+			
+		</action>
+		<!-- 管理员登录 -->
+		<action name="administrator_*" class="veating.action.AdminAction" method="{1}">
+			<result>${url}</result>
+			
+		</action>
+	</package> 
+
+
+</struts>
